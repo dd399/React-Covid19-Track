@@ -4,6 +4,7 @@ import { Cards, CountryPicker, Charts } from './Components';
 import { fetchData } from './Api/';
 import styles from './App.module.css';
 import CoronaImage from '../src/Images/CoronaVirusHeader-Final-3.jpg';
+import Footer from './Components/Footer/Footer';
 
 //import image from './images/image.png';
 
@@ -35,8 +36,10 @@ class App extends React.Component {
         <Cards data={data} />
         
         <Charts data={data} country={country} />
-        {/* <Chart data={data} country={country} />  */}
+        
+        <Footer />
       </div>
+      
     );
   }
 }
